@@ -8,12 +8,16 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         setearObjeto();
+
     }
 
     // Update is called once per frame
-    void Update()
+    function Update()
     {
-        
+        if (Input.GetAxis("Vertical") > 0.2)
+            animation.CrossFade("walk");
+        else
+            animation.CrossFade("idle");
     }
 
 
