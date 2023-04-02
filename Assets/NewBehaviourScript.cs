@@ -16,8 +16,8 @@ public class NewBehaviourScript : MonoBehaviour
         
     }
 
+
     public void setearObjeto()
     {
-
     }
 }
